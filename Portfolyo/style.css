@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(195, 138, 248, 0.829);
+}
+
+
+.main{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+.main h1{
+    word-spacing: 5px;
+    font-size: 45px;
+    margin: 10px;
+
+
+}
+
+.main p{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.fa-brands{
+    margin-inline: 15px;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+
+
+.animate{
+    animation-name:animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate{
+    0%{
+        color: white;
+    }
+    50%{
+        color: rgba(195, 138, 248, 0.829);
+    }
+    100%{color: white;}
+}
+
+/* ! HAKKIMDA KISMI */
+
+.container{
+    width: 80%;
+    background-color: white;
+    margin-top: 30px;
+    padding: 8%;
+}
+
+.content{
+    display: flex;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.person{
+    width: 25%;
+    margin-right: 80px;
+}
+.person img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.persontext{
+    width: 75%;
+}
+
+/* ! YETENEKLER VE AÇIKLAMA BÖLÜMÜ */
+
+.yetenekler{
+    width: 50%;
+    margin-right: 30px;
+}
+
+.aciklama{
+    width: 50%;
+}
+
+/* ! PROJELER BÖLÜMÜ */
+
+.proje-foto{
+    display: flex;
+
+}
+
+.foto{
+    width: 25%;
+    margin-inline: 30px;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+    transition: .7s all;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+
+.pro{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.deneyim{
+    margin: auto;
+    margin-top: 50px;
+ margin-bottom: 30px;
+    width: 30%;
+    
+   
+}
+
+/* ! MALİYET KISMI */
+
+.maliyet{
+    width: 25%;
+    margin-inline: 10px;
+    
+}
+.maliyet label{
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.maliyet select{
+    width: 70%;
+    padding: 8px 2px;
+    border-radius: 5px;
+}
+.mali{
+    text-align: center;
+    margin-top: 50px;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    margin-top: 25px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: .5s all;
+}
+
+button:hover{
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    transform: scale(0.9);
+}
+
+/* ! İLETİŞİM BÖLÜMÜ */
+
+.iletisim{
+    width: 50%;
+    margin-right: 30px;
+}
+
+.iletisim input, textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.ilet{
+    text-align: center;
+    margin-top: 50px;
+}
+
+iframe{
+    height: 350px;
+}
+
+
+/* ! RESPONSİVE TASARIM BÖLÜMÜ */
+
+@media screen and (max-width:850px){
+    .person{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .content{
+        flex-direction: column;
+    }
+
+    .person,
+    .persontext,
+    .yetenekler,
+    .aciklama{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .proje-foto{
+        flex-direction: column;
+    }
+
+    .foto{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .maliyet{
+        width: 50%;
+        margin-bottom: 20px;
+
+    }
+
+    .iletisim{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+        
+    
+}
+    
+
+    
